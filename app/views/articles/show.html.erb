@@ -1,0 +1,17 @@
+<div class="container">
+    <h1><%= @article.title %></h1>
+    <%= link_to "ブログの編集",[:edit,@article] %>
+    <span>　　　　</span>
+    <%= link_to "一覧に戻る", :articles %>
+    <br><br>
+    <table>
+        <tr>
+            <th>　タイトル　</th>
+            <td>　<%= @article.title %>　</td>
+        </tr>
+        <tr>
+            <th>　本文　</th>
+            <td>　<%= @article.body %>　</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>ブロブの編集</h1>
+    <%= form_for @article do |form| %>
+        <table>
+            <tr>
+            <th><%= form.label :title,"タイトル" %></th>
+            <td><%= form.text_field :title %></td>
+        </tr>
+        <tr>
+            <th><%= form.label :body,"本文" %></th>
+            <td><%= form.text_area :body, rows:10, cols: 40 %></td>
+        </tr>
+        </table>
+        <div><%= form.submit %></div>
+    <% end %>
+</div>
